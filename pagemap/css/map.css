@@ -1,0 +1,18 @@
+ /* PLACEHOLDER */
+#map {
+    margin: 10px;
+    padding: 10px;
+    border: solid 1.5px #ffb997;
+    background-color: #843b62;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+
+
+/* More Placeholders */
+#post-prompt {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: dashed 3px #560b40;
+    background-color: #f67e7d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
