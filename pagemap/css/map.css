@@ -1,11 +1,18 @@
  /* PLACEHOLDER */
 #map {
-    margin: 10px;
+    margin: 0 auto; 
     padding: 10px;
-    border: solid 1.5px #ffb997;
+    border: solid 4px #f67e7d;
     background-color: #843b62;
     font-family: Verdana, Geneva, Tahoma, sans-serif
   }
+#map {
+  width: 50vw !important;
+  margin-bottom: 10px;
+}
+
+
+
 
 
 /* More Placeholders */
