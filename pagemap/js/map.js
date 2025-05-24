@@ -84,3 +84,6 @@ document.getElementById('button').addEventListener('click', function() {
     function closeThanksPopup() {
         document.getElementById('thanksPopup').style.display = 'none';
     }
+// need backend to add to buttons :(
+
+// button to add slug should use marker, check leaflet documentation
