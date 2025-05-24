@@ -47,12 +47,27 @@
         </div>
      </nav>
 
+
+
+
     <!--Include Table of Contents Button to navigate to other pages of the site! Top Right!-->
         <!--CSS People make any button attatched to this ID the rounded square with 3 lines as per protoype.-->
-
         <!-- Might work as a img asset rather than styled in CSS...easy to test this theory.-->
         <!-- Make sure its in the top right! CSS Folks-->
-        <button id="table-contents"><!--<img src="____" width = _____--></button>
+
+    <button id="popupButton" class="contents-button">☰</button>
+
+    <!-- The popup container -->
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="popup-content">
+        <span class="close-btn">&times;</span>
+            <h2>Directory</h2>
+                <br><a href="pagemap/">Slug Map</a>
+                <br><br><br><a href="pageabout/">About Us</a>
+        </div>
+    </div>
+
+
     </main>
 </body>
 </html>
