@@ -32,3 +32,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add your interactive functionality here
   });
 });
+
+
+//About us Slug!//
+document.addEventListener('DOMContentLoaded', function() {
+  const image = document.querySelector('.hover-image');
+  
+  image.addEventListener('mouseover', function() {
+    this.src = "./img/bentslug.PNG";
+  });
+  
+  image.addEventListener('mouseout', function() {
+    this.src = "./img/flatslug.PNG";
+  });
+});

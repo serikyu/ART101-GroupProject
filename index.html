@@ -13,6 +13,7 @@
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/homepage.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+     <link rel="preload" href="./img/bentslug.PNG" as="image">
 
     <!-- jQuery Load-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
@@ -41,20 +42,18 @@
 
         <!-- About Us Button, Style with CSS and move to bottom right-->
         <div class="about-section">
+            <a href="pageabout/" class="link">
+                <img src="./img/flatslug.PNG" width = 100 alt="Hover Effect" class="hover-image">
+                <br>About Us</a>
+            <div class="hover-image-container">
             <!-- Slug Asset that moves upward when mouse hovers over-->
-            <!-- Asset here <img src="_____" width = _____-->
-            <a href="pageabout/">About Us</a>
+            </div>
         </div>
      </nav>
 
 
 
-
     <!--Include Table of Contents Button to navigate to other pages of the site! Top Right!-->
-        <!--CSS People make any button attatched to this ID the rounded square with 3 lines as per protoype.-->
-        <!-- Might work as a img asset rather than styled in CSS...easy to test this theory.-->
-        <!-- Make sure its in the top right! CSS Folks-->
-
     <button id="popupButton" class="contents-button">☰</button>
 
     <!-- The popup container -->
