@@ -6,10 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
 	<script src="js/about.js" DEFER></script>
+<<<<<<< HEAD
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+=======
+	<script src="../js/site.js" DEFER></script>
+>>>>>>> e5e65c89d89fe53425d1360557d596248a3864df
 </head>
 
 <body>
@@ -142,12 +146,23 @@
 		<a href="/pagemap/">To The Slug Map!</a>
 			<!-- Bottom right of site-->
 		</nav>
-
-
-
-		<!-- Make sure its in the top right! CSS Folks-->
-		<br><button id="table-contents"><!--<img src="____" width = _____--></button>
 		
+
+
+	<!--Table of contents Button-->
+    <button id="popupButton" class="contents-button">☰</button>
+
+    <!-- The popup container -->
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="popup-content">
+        <span class="close-btn">&times;</span>
+            <h2>Directory</h2>
+                <br><a href="/pagemap/">Slug Map</a>
+                <br><br><br><a href="/pageabout/">About Us</a>
+        </div>
+    </div>
+
+
     </main>
 </body>
 </html>
