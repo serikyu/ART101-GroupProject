@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Action button example
   actionButton.addEventListener('click', function() {
     alert('Button clicked!');
-    // Add your interactive functionality here
   });
 });
 
