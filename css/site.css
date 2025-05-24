@@ -1,17 +1,18 @@
-
-
  /* NOTE THIS IS PLACEHOLDER CSS!!! */
 
 
-
 body {
-    background-color: #0b032d;
+    background-color: #484075;
+ 
   }
   
-
   /* we can have rules apply to multiple elements at the same time with commas */
-  h1,h2,h3 {
-    font-family: 'Courier New', Courier, monospace
+  *,h1,h2,h3 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
   }
   
   /* and we can have rules that overlap other rules, both take effect */
@@ -25,16 +26,14 @@ body {
   #content {
     margin: 10px;
     padding: 10px;
-    border: solid 1.5px #ffb997;
-    background-color: #843b62;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    border: solid 1.5px #2d22be;
+    background-color: hsl(49, 100%, 76%);
   }
   
   /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
   .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: dashed 3px #560b40;
-    background-color: #f67e7d;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    border: dashed 3px #ffffff;
+    background-color: lab(80.06% 10.32 59.91);
   }
