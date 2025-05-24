@@ -19,6 +19,7 @@ body {
     letter-spacing: 5px;
     word-spacing: 5px;
     font-size: 200%;
+    text-align: center;
   }
   
   /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
@@ -114,4 +115,10 @@ body {
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(-20px);}
   to {opacity: 1; transform: translateY(0);}
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 25%;
 }
