@@ -2,7 +2,7 @@
 // Implemented for this project by Ren Buendia
 
 // Set map view to UC Santa Cruz Campus
-let myMap = L.map("map").setView([36.99, -122.061], 15.3);
+let myMap = L.map("map").setView([36.99, -122.06], 15);
 
 // Use the Stadia OSM Bright tile layer (From https://leaflet-extras.github.io/leaflet-providers/preview/)
 let Stadia_OSMBright = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.{ext}', {
