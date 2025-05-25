@@ -1,17 +1,19 @@
-
-
  /* NOTE THIS IS PLACEHOLDER CSS!!! */
 
 
-
 body {
-    background-color: #0b032d;
+    background-color: #1b184b;
+ 
   }
   
-
   /* we can have rules apply to multiple elements at the same time with commas */
-  h1,h2,h3 {
-    font-family: 'Courier New', Courier, monospace
+  *,h1,h2,h3 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #b62656;
+    
   }
   
   /* and we can have rules that overlap other rules, both take effect */
@@ -19,26 +21,31 @@ body {
     letter-spacing: 5px;
     word-spacing: 5px;
     font-size: 200%;
+    text-align: center;
+    color: #b62656;
+  }
+
+  p {
+    color: #3f031c;
   }
   
   /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
   #content {
     margin: 10px;
     padding: 10px;
-    border: solid 1.5px #ffb997;
-    background-color: #843b62;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    border: solid 1.5px #2d22be;
+    background-color: hsl(49, 100%, 76%);
+    border-radius: 25px;
   }
   
   /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
   .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: dashed 3px #560b40;
-    background-color: #f67e7d;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    border: dashed 5px #e26a6a;
+    background-color: #ee9d84;
+    border-radius: 25px;
   }
-
 
 /*CSS Style all of this!!
 /* Table of Contents Button */
@@ -48,7 +55,7 @@ body {
   top: 20px;
   right: 20px;
   padding: 10px 15px;
-  background: #000000;
+  background: #586999;
   color: white;
   border: none;
   border-radius: 4px;
@@ -115,3 +122,17 @@ body {
   from {opacity: 0; transform: translateY(-20px);}
   to {opacity: 1; transform: translateY(0);}
 }
+
+
+/* About Us Slug! */
+/*Style this according to paper prototype! bottom right corner! */
+
+
+
+
+img {
+  display: block;
+  margin: auto;
+  width: 25%;
+}
+

@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/map.css">
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
 	<script src="js/map.js" DEFER></script>
-    <script src="../js/site.js" DEFER></script>
+    <script src="../js/site.js" defer></script>
 
     <!--Leaflet-->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -15,6 +15,10 @@
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <!--End of Leaflet-->
 </head>
 
@@ -43,13 +47,6 @@
             </div>
         </section>
 
-        
-        <!-- I Found A Slug Button and Long Slug Image Asset-->
-        <div id="post-prompt">
-            <!--Place button  INSIDE long slug asset, needs click listener for pop-up window-->
-             <!--<img src="_______" width = 300   REMINDER: Same Asset as Slug Locator-->
-            <button id="slug-found">I Found A Slug!</button>
-        </div>
 
         <!-- Last Slug Uploaded to the Database -->
         <!-- Takes info of last posted Slug -->
@@ -60,8 +57,35 @@
         <!--Additional Pop-up info + HTML To Go Here-->
         <!-- Includes Poster Name, Added image, caption, and submit button-->
             <!-- Includes a "Thank you for your submission." Pop-up that lasts until until ex-ed out.-->
+        <!--Place button  INSIDE long slug asset, needs click listener for pop-up window-->
+        <!--<img src="_______" width = 300   REMINDER: Same Asset as Slug Locator-->
         <!-- X In the corner to close at any time.-->
+    <button id="posterButton" class="poster-contet(s)">I Found A Slug!</button>
 
+    <!--Poster Container-->
+    <div id="posterOverlay" class="poster-overlay">
+        <div class="poster-content">
+        <span class="close-btn">&times;</span>
+            <input type="text" id="name" class="username-input" placeholder="Username">
+            <br><input type="text" id="location" class="location-input" placeholder="Where was the slug found?">
+            <br><input type="text" id="caption" class="caption-input" placeholder="Write your caption...">
+            <!--Needs editing to allow for image input.-->
+            <br><input type="img" id="image" class = "image-input" placeholder = "Add Image Here">
+            <br><button id="button" class="submit-button">Submit</button>
+            <div id="output"></div>
+        </div>
+    </div>
+<!--Thanks for submission pop-up-->
+<div id="thanksPopup" class="thanks-overlay" style="display: none;">
+    <div class="thanks-content">
+        <span class="close-btn" onclick="closeThanksPopup()">&times;</span>
+        <h2>Thanks for your submission!</h2>
+    </div>
+</div>
+
+
+
+<!----Submit Button-->
 
 
         <!-- Pop-up Window for viewing other user posts will be in JS, Styled in CSS-->
@@ -72,10 +96,18 @@
 
 <!------------------------------------------------------------------------------------------------->
 <!--Style all of these!!!-->
+    <nav id="links">
 
-        <!-- Do the same "About Us" Slug Asset and functionality as the homepage (Bottom Left)-->
-        <!-- Asset here <img src="_____" width = _____-->
-        <a href="/pageabout/">About Us</a>
+        <!-- About Us Button, Style with CSS and move to bottom right-->
+        <div class="about-section">
+        <div class="hover-image-container">
+            <a href="/pageabout/" class="link">
+                <img src="./img/flatslug.PNG" width = 100 alt="Hover Effect" class="hover-image">
+                <br>About Us</a>
+            <!-- Slug Asset that moves upward when mouse hovers over-->
+        </div>
+        </div>
+    </nav>
 
 	<!--Table of contents Button-->
     <button id="popupButton" class="contents-button">☰</button>
@@ -89,7 +121,6 @@
                 <br><br><br><a href="/pageabout/">About Us</a>
         </div>
     </div>
-
 
     </main>
 </body>
