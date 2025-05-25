@@ -23,3 +23,44 @@
   from {opacity: 0; transform: translateY(-20px);}
   to {opacity: 1; transform: translateY(0);}
 }
+
+
+.minor-section-columned {
+  column-count: 4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: dashed 5px #bb355d;
+  background-color: #FFE985;
+  border-radius: 25px;
+}
+
+.minor-section-columned > h3 {
+  display: inline-block;
+}
+
+ /* Create four equal columns that float next to each other
+.minor-section-col {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: dashed 5px #e26a6a;
+    background-color: #ee9d84;
+    border-radius: 25px;
+  }
+
+
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+/* @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}   */

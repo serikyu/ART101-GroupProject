@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: #1b184b;
+    background-color: #1b3250;
  
   }
   
@@ -34,7 +34,7 @@ body {
     margin: 10px;
     padding: 10px;
     border: solid 1.5px #2d22be;
-    background-color: hsl(49, 100%, 76%);
+    background-color: #f79151;
     border-radius: 25px;
   }
   
@@ -42,8 +42,8 @@ body {
   .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: dashed 5px #e26a6a;
-    background-color: #ee9d84;
+    border: dashed 5px #bb355d;
+    background-color: #FFE985;
     border-radius: 25px;
   }
 
