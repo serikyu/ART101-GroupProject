@@ -1,4 +1,25 @@
 <!DOCTYPE html>
+
+<!-- Firebase Code for main index.html - Alexander -->
+<!-- Load Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+
+<!-- Initialize Firebase -->
+  <!-- Your config should come AFTER Firebase scripts -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyD5v7tRVtB8f16TQmTPq5n2SDY-FzOH20k",
+      authDomain: "slugs-near-you.firebaseapp.com",
+      projectId: "slugs-near-you",
+      storageBucket: "slugs-near-you.appspot.com",
+      messagingSenderId: "993053159810",
+      appId: "1:993053159810:web:a8e017e8cb3d7fe355df9b"
+    };
+  
+  firebase.initializeApp(firebaseConfig);
+</script>
+
 <html>
 <head>
     <!-- Homepage Title (Tab Title) -->
@@ -41,9 +62,8 @@
             <div class="minor-section" id="start-box">
                 <!-- Slug Heart Asset Input Below-->
                 <a href="pagemap/" style="text-align: center;">
-                    <img class="heart" src="img/heart.PNG" width = 500>
+                    <img class="heart" src="img/heart.PNG" width = 500><div class="start-text">Start!</div>
                 </a>
-                <div class="start-text">Start!</div>
             </div>
 
 
@@ -70,6 +90,7 @@
                 <h2>Directory</h2>
                     <br><a href="pagemap/">Slug Map</a>
                     <br><br><br><a href="pageabout/">About Us</a>
+                                    <br><br><br><br><a href="pagesignin/index.html">Sign In</a>
             </div>
         </div>
 
