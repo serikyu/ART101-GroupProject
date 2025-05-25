@@ -4,17 +4,40 @@
 // Set map view to UC Santa Cruz Campus
 let myMap = L.map("map").setView([36.99, -122.06], 15);
 
-// Use the Stadia OSM Bright tile layer (From https://leaflet-extras.github.io/leaflet-providers/preview/)
-let Stadia_OSMBright = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.{ext}', {
-	minZoom: 0,
-	maxZoom: 20,
-	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	ext: 'png'
-});
 
 // Implement tile layer style
-Stadia_OSMBright.addTo(myMap);
+let OSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  });
+  
+  OSM.addTo(myMap);
+  
 
+// On click, add marker
+let userMarker; // define outside the click event
+
+myMap.on('click', function(e) {
+  let lat = e.latlng.lat.toFixed(4);
+  let lng = e.latlng.lng.toFixed(4);
+
+  // Remove old marker if it exists
+  if (userMarker) {
+    myMap.removeLayer(userMarker);
+  }
+
+  // Add new marker
+  userMarker = L.marker([lat, lng])
+    .addTo(myMap)
+    .bindPopup(`Coordinates: (${lat}, ${lng})`)
+    .openPopup();
+
+  // Auto-fill the location field
+  const locationInput = document.getElementById('location');
+  if (locationInput) {
+    locationInput.value = `Lat: ${lat}, Lng: ${lng}`;
+  }
+});
 
 // About Slug!
 document.addEventListener('DOMContentLoaded', function() {
@@ -84,14 +107,6 @@ document.getElementById('button').addEventListener('click', function() {
     function closeThanksPopup() {
         document.getElementById('thanksPopup').style.display = 'none';
     }
-
-
-
-// need backend to add to buttons :( Please elaborate?
-
-// button to add slug should use marker, check leaflet documentation
-
-
 
 //Tables of Contents Button//
 document.addEventListener('DOMContentLoaded', function() {
