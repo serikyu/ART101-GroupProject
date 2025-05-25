@@ -4,3 +4,28 @@
   left: 50px;
   bottom: 20px;
 }
+
+/* start heart cursor hover effect */
+img.heart:hover {
+    transform: scale(1.15);
+}
+
+h1 {
+    font-size: 400%;
+    color: #b62656;
+}
+
+
+
+/* putting the start text in the sleart (slug heart) */
+.start-box {
+    position: relative;
+    text-align: center;
+}
+
+.start-text {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
