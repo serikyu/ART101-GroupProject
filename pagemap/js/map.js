@@ -15,6 +15,30 @@ let Stadia_OSMBright = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_brigh
 // Implement tile layer style
 Stadia_OSMBright.addTo(myMap);
 
+// On click, add marker
+let userMarker; // define outside the click event
+
+myMap.on('click', function(e) {
+  let lat = e.latlng.lat.toFixed(4);
+  let lng = e.latlng.lng.toFixed(4);
+
+  // Remove old marker if it exists
+  if (userMarker) {
+    myMap.removeLayer(userMarker);
+  }
+
+  // Add new marker
+  userMarker = L.marker([lat, lng])
+    .addTo(myMap)
+    .bindPopup(`Coordinates: (${lat}, ${lng})`)
+    .openPopup();
+
+  // Auto-fill the location field
+  const locationInput = document.getElementById('location');
+  if (locationInput) {
+    locationInput.value = `Lat: ${lat}, Lng: ${lng}`;
+  }
+});
 
 // About Slug!
 document.addEventListener('DOMContentLoaded', function() {
@@ -84,14 +108,6 @@ document.getElementById('button').addEventListener('click', function() {
     function closeThanksPopup() {
         document.getElementById('thanksPopup').style.display = 'none';
     }
-
-
-
-// need backend to add to buttons :( Please elaborate?
-
-// button to add slug should use marker, check leaflet documentation
-
-
 
 //Tables of Contents Button//
 document.addEventListener('DOMContentLoaded', function() {
