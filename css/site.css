@@ -1,6 +1,3 @@
- /* NOTE THIS IS PLACEHOLDER CSS!!! */
-
-
 body {
     background-color: #1b3250;
  
@@ -26,7 +23,7 @@ body {
   }
 
   p {
-    color: #3f031c;
+    color: #d13c6e;
   }
   
   /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
@@ -125,8 +122,8 @@ body {
 
 
 /* About Us Slug! */
-/*Style this according to paper prototype! bottom right corner! */
-
+/*Style this according to paper prototype! bottom left corner! (edit from elio: this css code will be in homepage.css, not here, because
+it fucks with the big ol slug on the "about us" page*/
 
 
 

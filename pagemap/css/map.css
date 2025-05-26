@@ -27,11 +27,23 @@
 
 /*About Slug!*/
 .hover-image-container {
-  position: absolute;
+  /* position: absolute; */
   left: 20px;
   bottom: 20px;
+  top: 50px;
+  float: right;
 
 }
+
+.about-section {
+  position: absolute; 
+  left: 0px;
+  bottom: 0px;
+  /* float: left; */
+  width: 300px;
+  display: inline-block;
+}
+
 
 
 
