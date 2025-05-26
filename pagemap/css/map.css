@@ -2,7 +2,7 @@
 #map {
     margin: 0 auto; 
     padding: 10px;
-    border: solid 4px #f67e7d;
+    border: solid 6px #e46d6d;
     background-color: #843b62;
     font-family: Verdana, Geneva, Tahoma, sans-serif
   }
@@ -102,7 +102,8 @@ img.longslug:hover {
   display: inline-block;
 } 
 
-/*Table of contents*/
+/*CSS Style all of this!!
+/* Table of Contents Button */
 .contents-button {
   position: fixed;
   top: 20px;
@@ -116,8 +117,75 @@ img.longslug:hover {
   z-index: 999;
 }
 
+.contents-button:hover {
+  background: #95b6e7;
+}
+
+/* Popup overlay - covers half screen */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
 
 
+/* Popup content box */
+.popup-content {
+  background-color: #FFE985;
+  padding: 20px;
+  width: 300px;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: 0px; 
+  top: 0;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #f79151;
+}
+
+/* Action button */
+.action-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.action-btn:hover {
+  background-color: #45a049;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/*link hover effects*/
+a:hover {
+  color: #f79151;
+}
+
+/*Post pop-up overlay */
 .poster-overlay {
   display: none;
   position: fixed;
