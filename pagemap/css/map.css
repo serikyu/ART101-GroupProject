@@ -84,12 +84,14 @@ img.longslug:hover {
 
 /*About Slug!*/
 .hover-image-container {
-  /* position: absolute; */
-  left: 20px;
-  bottom: 20px;
-  top: 50px;
-  float: right;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    /* float: left;  */
+    width: 300px;
+    display: inline-block;
 }
+
 
 .about-section {
   position: absolute; 
