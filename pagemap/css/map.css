@@ -88,14 +88,25 @@ img.longslug:hover {
     left: 0px;
     bottom: 0px;
     /* float: left;  */
-    width: 300px;
+    width: 400px;
     display: inline-block;
 }
 
 .about-text {
     position: relative;
-    left: 117px;
+    left: 165px;
+    font-size: large;
 }
+
+/*Twerking Slug Button Size and Positioning*/
+.about-section {
+  position: absolute; 
+  left: 0px;
+  bottom: 0px;
+  /* float: left;  */
+  width: 300px;
+  display: inline-block;
+} 
 
 /*CSS Style all of this!!
 /* Table of Contents Button */
