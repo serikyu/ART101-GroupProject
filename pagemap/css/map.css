@@ -84,12 +84,10 @@ img.longslug:hover {
 
 /* Silly Slug! */
 .hover-image-container {
-    position: absolute;
     left: 0px;
     bottom: 0px;
-    /* float: left;  */
+    float: left;
     width: 400px;
-    display: inline-block;
 }
 
 .about-text {
@@ -98,15 +96,6 @@ img.longslug:hover {
     font-size: large;
 }
 
-/*Twerking Slug Button Size and Positioning*/
-.about-section {
-  position: absolute; 
-  left: 0px;
-  bottom: 0px;
-  /* float: left;  */
-  width: 300px;
-  display: inline-block;
-} 
 
 /*CSS Style all of this!!
 /* Table of Contents Button */
@@ -379,7 +368,7 @@ a:hover {
 }
 
 .close-btn:hover {
-  color: #ff0000;
+  color: #f79151;
 }
 
 /* Action button */
