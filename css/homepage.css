@@ -1,11 +1,19 @@
 /* Silly Slug! */
 .hover-image-container {
-  position: fixed;
-  left: 50px;
-  bottom: 20px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    /* float: left;  */
+    width: 300px;
+    display: inline-block;
 }
 
-/* start heart cursor hover effect */
+.about-text {
+    position: relative;
+    left: 117px;
+}
+
+/* start button cursor hover effect */
 img.heart:hover {
     transform: scale(1.15);
 }
@@ -36,6 +44,8 @@ img .heart {
     left: 50%;
 }
 
+
+/*Twerking Slug Button Size and Positioning*/
 .about-section {
   position: absolute; 
   left: 0px;

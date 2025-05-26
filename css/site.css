@@ -24,6 +24,7 @@ body {
 
   p {
     color: #d13c6e;
+    display: inline-block;
   }
   
   /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
@@ -46,7 +47,6 @@ body {
 
 /*CSS Style all of this!!
 /* Table of Contents Button */
-/* Popup overlay - covers entire screen */
 .contents-button {
   position: fixed;
   top: 20px;
@@ -60,8 +60,11 @@ body {
   z-index: 999;
 }
 
+.contents-button:hover {
+  background: #95b6e7;
+}
 
-
+/* Popup overlay - covers entire screen */
 .popup-overlay {
   display: none;
   position: fixed;
@@ -76,7 +79,7 @@ body {
 
 /* Popup content box */
 .popup-content {
-  background-color: white;
+  background-color: #FFE985;
   padding: 20px;
   width: 300px;
   height: 100%;
@@ -96,7 +99,7 @@ body {
 }
 
 .close-btn:hover {
-  color: #ff0000;
+  color: #f79151;
 }
 
 /* Action button */
@@ -120,6 +123,10 @@ body {
   to {opacity: 1; transform: translateY(0);}
 }
 
+/*link hover effects*/
+a:hover {
+  color: #f79151;
+}
 
 /* About Us Slug! */
 /*Style this according to paper prototype! bottom left corner! (edit from elio: this css code will be in homepage.css, not here, because
