@@ -56,3 +56,13 @@ a.home:hover {
 a.map:hover {
   color: #FFE985;
 }
+
+/*Twerking Slug Button Size and Positioning*/
+.about-section {
+  position: absolute; 
+  left: 0px;
+  bottom: 0px;
+  /* float: left;  */
+  width: 300px;
+  display: inline-block;
+} 
