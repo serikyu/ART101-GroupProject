@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-storage-compat.js"></script>
+<script>
+  // Initialize Firebase (same config as index.html)
+  const firebaseConfig = {
+    apiKey: "AIzaSyD5v7tRVtB8f16TQmTPq5n2SDY-FzOH20k",
+    authDomain: "slugs-near-you.firebaseapp.com",
+    projectId: "slugs-near-you",
+    storageBucket: "slugs-near-you.appspot.com",
+    messagingSenderId: "993053159810",
+    appId: "1:993053159810:web:a8e017e8cb3d7fe355df9b"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+  <title>Upload - Slugs Near You</title>
+  <!-- Keep the same Firebase scripts from index.html -->
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+    #uploadSection { margin-top: 20px; }
+    #postsContainer { margin-top: 30px; }
+    .post { border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Upload Your Slug</h1>
+  <button id="logoutBtn">Logout</button>
+  
+  <div id="uploadSection">
+    <input type="file" id="fileInput" accept="image/*">
+    <textarea id="commentInput" placeholder="Add a comment..."></textarea>
+    <button id="uploadBtn">Upload</button>
+    <p id="statusMsg"></p>
+  </div>
+
+  <div id="postsContainer">
+    <h2>Recent Posts</h2>
+    <!-- Posts will load here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

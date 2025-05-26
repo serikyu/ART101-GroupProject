@@ -1,0 +1,38 @@
+<head>
+  <!-- Firebase 9.x (compat version for gradual migration) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-storage-compat.js"></script>
+  
+  <!-- Your config should come AFTER Firebase scripts -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyD5v7tRVtB8f16TQmTPq5n2SDY-FzOH20k",
+      authDomain: "slugs-near-you.firebaseapp.com",
+      projectId: "slugs-near-you",
+      storageBucket: "slugs-near-you.appspot.com",
+      messagingSenderId: "993053159810",
+      appId: "1:993053159810:web:a8e017e8cb3d7fe355df9b"
+    };
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  
+  <!-- Then load your script.js -->
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div id="authSection">
+    <h1>Welcome to Slugs Near You</h1>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <button id="registerBtn">Register</button>
+    <p id="authMessage"></p>
+  </div>
+
+  <!-- Loading Firebase and scripts (keep what you already have in head) -->
+</body>
