@@ -24,17 +24,35 @@
   to {opacity: 1; transform: translateY(0);}
 }
 
-
+/*instruction columns*/
 .minor-section-columned {
-  column-count: 4;
   padding: 10px;
   margin-bottom: 10px;
   border: dashed 5px #bb355d;
   background-color: #FFE985;
   border-radius: 25px;
+  display: flex;
+}
+
+.column {
+  flex: 0.25;
+  margin: 10px;
 }
 
 .minor-section-columned > h3 {
   display: inline-block;
 }
 
+/*link alignment*/
+a.map {
+  float: right;
+}
+
+/*link effects*/
+a.home:hover {
+  color: #FFE985;
+}
+
+a.map:hover {
+  color: #FFE985;
+}
