@@ -89,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
 //Thanks for your submission pop-up!
 document.getElementById('button').addEventListener('click', function() {
         // Close the current overlay
@@ -108,40 +107,42 @@ document.getElementById('button').addEventListener('click', function() {
         document.getElementById('thanksPopup').style.display = 'none';
     }
 
+
+
 //Tables of Contents Button//
 document.addEventListener('DOMContentLoaded', function() {
-  // Get elements
-  const popupButton = document.getElementById('popupButton');
-  const popupOverlay = document.getElementById('popupOverlay');
-  const closeButton = document.querySelector('.close-btn');
-  const actionButton = document.querySelector('.action-btn');
-  
-  // Open popup
-  popupButton.addEventListener('click', function() {
-    popupOverlay.style.display = 'block';
-    setTimeout(() => {
-      popupOverlay.classList.add('active');
-    }, 10);
-  });
-  
-  // Close popup
-  closeButton.addEventListener('click', function() {
-    popupOverlay.style.display = 'none';
-  });
-  
-  // Close when clicking outside content
-  popupOverlay.addEventListener('click', function(e) {
-    if (e.target === popupOverlay) {
-      popupOverlay.style.display = 'none';
-    }
-  });
-  
-  // Action button example
-  actionButton.addEventListener('click', function() {
-    alert('Button clicked!');
-  });
+    // Get elements
+    const popupButton = document.getElementById('popupButton');
+    const popupOverlay = document.getElementById('popupOverlay');
+    const closeButton = document.querySelector('.close-btn');
+    
+    // Open popup
+    popupButton.addEventListener('click', function() {
+        popupOverlay.style.display = 'block';
+        setTimeout(() => {
+            popupOverlay.classList.add('active');
+        }, 10);
+    });
+    
+// Close the current overlay
+        document.getElementById('popupOverlay').style.display = 'none';
+    // Close buttons functionality
+    document.querySelector('.popup-content .close-btn').addEventListener('click', function() {
+        document.getElementById('popupOverlay').style.display = 'none';
+    });
+    
+    // Close when clicking outside content
+    popupOverlay.addEventListener('click', function(e) {
+        if (e.target === popupOverlay) {
+            popupOverlay.classList.remove('active');
+            setTimeout(() => {
+                popupOverlay.style.display = 'none';
+            }, 300);
+        }
+    });
 });
 
 
-
-
+function closePopupOverlay() {
+  document.getElementById('popupOverlay').style.display = 'none';
+}
