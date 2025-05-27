@@ -16,12 +16,32 @@ document.addEventListener('DOMContentLoaded', function() {
       ? auth.signInWithEmailAndPassword(email, password)
       : auth.createUserWithEmailAndPassword(email, password);
 
-    authAction
-      .then(() => window.location.href = "upload.html")
-      .catch(err => {
-        authMessage.textContent = err.message;
-        console.error(err);
-      });
+      // In handleAuth function
+authAction
+  .then(() => window.location.href = "/pagemap/index.html") // Changed to absolute path
+  .catch(err => {
+    authMessage.textContent = err.message;
+    console.error(err);
+  });
+
+// In onAuthStateChanged listener
+auth.onAuthStateChanged(user => {
+  const path = window.location.pathname;
+  
+  if (user) {
+    // Redirect to map page if on sign-in page
+    if (path.includes('pagesignin/index.html')) {
+      window.location.href = "/pagemap/index.html"; // Absolute path
+    }
+    initializeUploadPage();
+  } else {
+    // Redirect to login if on protected pages
+    if (path.includes('upload.html') || path.includes('pagemap/index.html')) {
+      window.location.href = "/pagesignin/index.html"; // Absolute path
+    }
+  }
+});
+
   };
 
   
@@ -35,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Redirect to login if not authenticated
     if (!user) {
-      window.location.href = "index.html";
+      window.location.href = "../pagemap/index.html";
       return;
     }
 

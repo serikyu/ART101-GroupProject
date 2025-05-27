@@ -12,6 +12,18 @@
 	<script src="../js/site.js" DEFER></script>
 </head>
 
+<!-- In theory this should check if the user is logged in and if not, redirect them to the login page. ID = also lets people see themselves logged in. -->
+<!-- Because Firebase is called in authcheck.js, the API key is not needed here. -->
+ <!-- Firebase Code - Integrated by Alexander Adams -->
+<!-- Firebase 9.x (compat version for gradual migration) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-storage-compat.js"></script>
+  <script defer src="../js/authcheck.js"></script> <!-- Adjust path as needed -->
+
+  <!--Make this actually show person logged in (idk how to) - Alexander -->
+  <p id="userEmail"></p>
 <body>
     <main id="content">
 		<!--Introduction-->
