@@ -2,7 +2,7 @@
 // Implemented for this project by Ren Buendia
 
 // Set map view to UC Santa Cruz Campus
-let myMap = L.map("map").setView([36.99, -122.06], 15);
+let myMap = L.map("map").setView([36.995, -122.06], 14.55);
 
 
 // Implement tile layer style
@@ -15,8 +15,9 @@ let OSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   
 
 // On click, add marker
-let userMarker; // define outside the click event
+let userMarker;
 
+// Clicking on the map get the coords of that location
 myMap.on('click', function(e) {
   let lat = e.latlng.lat.toFixed(4);
   let lng = e.latlng.lng.toFixed(4);
