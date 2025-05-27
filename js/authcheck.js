@@ -14,14 +14,21 @@ if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
 
-firebase.auth().onAuthStateChanged(user => {
-  if (!user) {
-    // Not logged in → redirect to sign-in page
-    window.location.href = "../pagesignin/index.html";  // Adjust this path based on page location
-  } else {
-    // Optional: Show user info
-    console.log("User is signed in:", user.email);
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  const auth = firebase.auth();
+  
+  auth.onAuthStateChanged(user => {
+    if (!user) {
+      // User is not logged in, redirect to sign-in page
+      window.location.href = "/pagesignin/index.html"; // Absolute path
+    } else {
+      // User is logged in, show their email
+      const userEmailElement = document.getElementById('userEmail');
+      if (userEmailElement) {
+        userEmailElement.textContent = user.email;
+      }
+    }
+  });
 });
 
 // Signifies on the page that the user is signed in. (WORK IN PROGRESS CURRENTLY BROKEN) - Alexander
