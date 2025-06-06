@@ -32,6 +32,8 @@
   background-color: #FFE985;
   border-radius: 25px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .column {
@@ -55,4 +57,9 @@ a.home:hover {
 
 a.map:hover {
   color: #FFE985;
+}
+
+.column img{
+  width: 350px;
+  height: auto;
 }
