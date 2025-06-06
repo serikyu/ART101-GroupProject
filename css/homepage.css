@@ -12,6 +12,13 @@
     font-size: large;
 }
 
+.about-section{
+    margin-right: auto; /* Pushes content left */
+    padding-left: -200px; /* Adjust as needed */
+}
+
+
+
 /* start button cursor hover effect */
 img.heart:hover {
     transform: scale(1.15);
