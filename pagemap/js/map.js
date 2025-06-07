@@ -1,3 +1,7 @@
+
+//Here for calling images - Alexander
+//const image = document.createElement("img")
+
 // This Leaflet map is based on the documentation provided by Brian Cheung
 // Implemented for this project by Ren Buendia
 
@@ -39,6 +43,27 @@ myMap.on('click', function(e) {
     locationInput.value = `Lat: ${lat}, Lng: ${lng}`;
   }
 });
+
+// Slugs manually loaded from Google Submissions - Alexander Adams
+// Naming convention should be slug's name - submitter - date (should have no spaces + all lowercase for consistency).
+// for example: "james-devin-2.20.2025"
+// These images will go in the "slugimg" folder.
+
+
+//Slug #1:
+// James - Submitted by Devin - 2/20/2025
+
+L.marker([36.9895972, -122.0719389])
+    .addTo(myMap)
+    .bindPopup(`
+        <div>
+            <h3>James</h3>
+            <img src="../slugimg/james-devin-2.20.2025.jpg">
+            <p>"Found this banana slug while going on a walk! - Devin<p>
+            <p>Coordinates: (36.9896, -122.0719) @ 2/20/2025</p>
+        </div>
+    `);
+
 
 // About Slug!
 document.addEventListener('DOMContentLoaded', function() {
