@@ -1,2 +1,0 @@
-Step 1. Navigate to ART101-GroupProject folder address.
-Step 2. (In CMD) firebase deploy --only hosting --force

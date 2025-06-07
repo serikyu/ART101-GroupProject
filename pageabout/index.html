@@ -12,18 +12,6 @@
 	<script src="../js/site.js" DEFER></script>
 </head>
 
-<!-- In theory this should check if the user is logged in and if not, redirect them to the login page. ID = also lets people see themselves logged in. -->
-<!-- Because Firebase is called in authcheck.js, the API key is not needed here. -->
- <!-- Firebase Code - Integrated by Alexander Adams -->
-<!-- Firebase 9.x (compat version for gradual migration) -->
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-storage-compat.js"></script>
-  <script defer src="../js/authcheck.js"></script> <!-- Adjust path as needed -->
-
-  <!--Make this actually show person logged in (idk how to) - Alexander -->
-  <p id="userEmail"></p>
 <body>
     <main id="content">
 		<!--Introduction-->
@@ -161,8 +149,9 @@
 			<div class="column">
 				<h3 style="font-size: 25px;">Alexander Adams</h3>
 				<img src="./img/alexslug.png">
-				<p style="font-size: 16px;">Hello! My name is Alexander and I am responsible for the web hosting, image uploading, and user authentication backend system for the website. The website uses Google firebase for as its infastructure.
-					My only coding experience prior to this was building a small game within Unity for a school project. You can contact me at <a href="AlexanderAdams2077@gmail.com">AlexanderAdams2077@gmail.com.</a>
+				<p style="font-size: 16px;">Hello! My name is Alexander and while I was initially responsible for the user authentication backend system for the website, we ended up using Google forms as our slug submission system due
+					to security reasons as well as time constraints. I helped with implementing the slug popup system on the slug map. the My only coding experience prior to this was building a small game within Unity for a school project.
+					You can contact me at <a href="AlexanderAdams2077@gmail.com">AlexanderAdams2077@gmail.com. or connect with me on <a href="https://www.linkedin.com/in/alexander-adams-bbcf/">LinkedIn</a>
 				</P>
 			</div>
 
@@ -203,7 +192,6 @@
             <h2>Directory</h2>
                 <br><a href="/pagemap/">Slug Map</a>
                 <br><br><br><a href="/pageabout/">About Us</a>
-				<br><br><br><a href="pagesignin/index.html">Sign In</a>
         </div>
     </div>
 
