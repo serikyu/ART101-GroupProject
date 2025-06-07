@@ -48,10 +48,14 @@ myMap.on('click', function(e) {
 // Naming convention should be slug's name - submitter - date (should have no spaces + all lowercase for consistency).
 // for example: "james-devin-2.20.2025"
 // These images will go in the "slugimg" folder.
+// If images hold location data, (36° 59' 22.55" N, 122° 4' 18.98" W)
+// convert to Decimal Degrees format (Latitude: 36.9895972 | Longitude: -122.0719389)
+// Use Lat and Long for Leaflet formatting.
+
 
 
 //Slug #1:
-// James - Submitted by Devin - 2/20/2025
+// James - Submitted by Devin - 2/20/25
 
 L.marker([36.9895972, -122.0719389])
     .addTo(myMap)
@@ -61,6 +65,20 @@ L.marker([36.9895972, -122.0719389])
             <img src="../slugimg/james-devin-2.20.25.jpg" style=  "width: 200px;">
             <p>"Found this banana slug while going on a walk! - Devin<p>
             <p>Coordinates: (36.9896, -122.0719) @ 2/20/2025</p>
+        </div>
+    `);
+
+//Slug #2:
+// Samsung - Submitted by Adrian - 1/4/25
+
+  L.marker([36.9985278, -122.0561056])
+    .addTo(myMap)
+    .bindPopup(`
+        <div>
+            <h3>Samsung</h3>
+            <img src="../slugimg/samsung-adrian-1.4.25.jpg" style=  "width: 200px;">
+            <p>"Found this banana slug while going on a walk! - Adrian<p>
+            <p>Coordinates: (36.9985278, -122.0561056) @ 1/4/2025</p>
         </div>
     `);
 
