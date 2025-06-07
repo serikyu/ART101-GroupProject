@@ -43,7 +43,7 @@ myMap.on('click', function(e) {
     locationInput.value = `Lat: ${lat}, Lng: ${lng}`;
   }
 });
-
+//------------------------------------------------------------------------------------------------------------------------
 // Slugs manually loaded from Google Submissions - Alexander Adams
 // Naming convention should be slug's name - submitter - date (should have no spaces + all lowercase for consistency).
 // for example: "james-devin-2.20.2025"
@@ -58,11 +58,25 @@ L.marker([36.9895972, -122.0719389])
     .bindPopup(`
         <div>
             <h3>James</h3>
-            <img src="../slugimg/james-devin-2.20.2025.jpg">
+            <img src="../slugimg/james-devin-2.20.25.jpg" style=  "width: 200px;">
             <p>"Found this banana slug while going on a walk! - Devin<p>
             <p>Coordinates: (36.9896, -122.0719) @ 2/20/2025</p>
         </div>
     `);
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------------------------------------------------------------------------
+
 
 
 // About Slug!
