@@ -1,6 +1,5 @@
 
-//Here for calling images - Alexander
-//const image = document.createElement("img")
+//Slugs will be submitted within this .js file
 
 // This Leaflet map is based on the documentation provided by Brian Cheung
 // Implemented for this project by Ren Buendia
@@ -43,6 +42,7 @@ myMap.on('click', function(e) {
     locationInput.value = `Lat: ${lat}, Lng: ${lng}`;
   }
 });
+
 //------------------------------------------------------------------------------------------------------------------------
 // Slugs manually loaded from Google Submissions - Alexander Adams
 // Naming convention should be slug's name - submitter - date (should have no spaces + all lowercase for consistency).
@@ -51,7 +51,6 @@ myMap.on('click', function(e) {
 // If images hold location data, (36° 59' 22.55" N, 122° 4' 18.98" W)
 // convert to Decimal Degrees format (Latitude: 36.9895972 | Longitude: -122.0719389)
 // Use Lat and Long for Leaflet formatting.
-
 
 
 //Slug #1:
@@ -81,6 +80,9 @@ L.marker([36.9895972, -122.0719389])
             <p>Coordinates: (36.9985278, -122.0561056) @ 1/4/2025</p>
         </div>
     `);
+
+
+
 
 
 
