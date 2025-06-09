@@ -63,3 +63,21 @@ a.map:hover {
   width: 350px;
   height: auto;
 }
+
+/* about*/
+
+.home {
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+}
+
+.map {
+    position: relative;
+    font-size: 20px;
+}
+
+img {
+    margin: auto;
+    width: 120px;
+  }
