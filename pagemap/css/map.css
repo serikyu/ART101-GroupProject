@@ -383,3 +383,20 @@ a:hover {
 .action-btn:hover {
   background-color: #45a049;
 }
+
+/* about*/
+
+.home {
+    position: relative;
+    font-size: 20px;
+}
+
+.about {
+    position: relative;
+    font-size: 20px;
+}
+
+img {
+    margin: auto;
+    width: 120px;
+}
