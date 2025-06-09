@@ -85,12 +85,40 @@ img.longslug:hover {
 }
 
 
-/* Silly Slug! */
-.hover-image-container {
+/* Silly Slugs! */
+.left-hover-image-container {
     left: 0px;
     bottom: 0px;
     float: left;
     width: 400px;
+}
+.right-hover-image-container {
+    right: 0px;
+    bottom: 0px;
+    float: right;
+    width: 400px;
+}
+
+/* about*/
+.home {
+    position: relative;
+    font-size: 20px;
+    float: left;
+}
+
+.about {
+    position: relative;
+    font-size: 20px;
+    float: right;
+}
+
+img {
+    margin: auto;
+    width: 120px;
+}
+
+#right-img{
+    float: right
 }
 
 /*CSS Style all of this!!
@@ -384,27 +412,3 @@ a:hover {
   background-color: #45a049;
 }
 
-/* about*/
-
-.home {
-    position: relative;
-    font-size: 20px;
-}
-
-.about {
-    position: relative;
-    font-size: 20px;
-}
-
-img {
-    margin: auto;
-    width: 120px;
-}
-
-a.about {
-    float: right;
-}
-
-.right-img{
-    float: right
-}

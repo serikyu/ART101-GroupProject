@@ -1,9 +1,15 @@
 /*Silly Slug!*/
-.hover-image-container {
+.left-hover-image-container {
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+}
+.right-hover-image-container {
   position: absolute;
   right: 50px;
   bottom: 10px;
 }
+
 
 /*table of contents*/
 
@@ -72,6 +78,6 @@ img {
     width: 120px;
   }
 
-.right-img{
+#right-img{
     float: right
 }
