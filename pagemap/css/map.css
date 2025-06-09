@@ -7,7 +7,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif
   }
 #map {
-  width: 50vw !important;
+  width: 70vw !important;
   margin-bottom: 10px;
 }
 
@@ -61,7 +61,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: b62656;
     font-size:50px;
     pointer-events: none;
     width: 100%;
@@ -71,7 +71,7 @@ h1 {
 
 .longslug {
     display: block;
-    width: 600px;
+    width: 500px;
     height: auto;
     max-width: 100%;
 }
@@ -80,22 +80,46 @@ img.longslug:hover {
     transform: scale(1.15);
 }
 
+.post-text:hover{
+    transform: scale(1.15);
+}
 
 
-/* Silly Slug! */
-.hover-image-container {
+/* Silly Slugs! */
+.left-hover-image-container {
     left: 0px;
     bottom: 0px;
     float: left;
     width: 400px;
 }
-
-.about-text {
-    position: relative;
-    left: 165px;
-    font-size: large;
+.right-hover-image-container {
+    right: 0px;
+    bottom: 0px;
+    float: right;
+    width: 400px;
 }
 
+/* about*/
+.home {
+    position: relative;
+    font-size: 20px;
+    float: left;
+}
+
+.about {
+    position: relative;
+    font-size: 20px;
+    float: right;
+}
+
+img {
+    margin: auto;
+    width: 120px;
+}
+
+#right-img{
+    float: right
+}
 
 /*CSS Style all of this!!
 /* Table of Contents Button */
@@ -104,7 +128,7 @@ img.longslug:hover {
   top: 20px;
   right: 20px;
   padding: 10px 15px;
-  background: #586999;
+  background: #67708f;
   color: white;
   border: none;
   border-radius: 4px;
@@ -357,6 +381,8 @@ a:hover {
 
 
 
+
+
 /*------------------*/
 /* Close button */
 .close-btn {
@@ -385,3 +411,4 @@ a:hover {
 .action-btn:hover {
   background-color: #45a049;
 }
+

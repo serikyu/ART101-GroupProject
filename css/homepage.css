@@ -1,5 +1,5 @@
 /* Silly Slug! */
-.hover-image-container {
+.left-hover-image-container {
     left: 0px;
     bottom: 0px;
     width: 400px;
@@ -8,8 +8,7 @@
 
 .about-text {
     position: relative;
-    left: 165px;
-    font-size: large;
+    font-size: 20px;
 }
 
 .about-section{
@@ -42,12 +41,5 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 45px;
 }
-
-img .heart {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-

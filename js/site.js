@@ -33,15 +33,28 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-//About us Slug!//
+//long Slug!//
 document.addEventListener('DOMContentLoaded', function() {
-  const image = document.querySelector('.hover-image');
+  const image1 = document.querySelector('.longslug-hover-image');
   
-  image.addEventListener('mouseover', function() {
+  image1.addEventListener('mouseover', function() {
     this.src = "./img/bentslug.PNG";
   });
   
-  image.addEventListener('mouseout', function() {
+  image1.addEventListener('mouseout', function() {
     this.src = "./img/flatslug.PNG";
+  });
+});
+
+//heart Slug!//
+document.addEventListener('DOMContentLoaded', function() {
+  const image2 = document.querySelector('.aboutslug-hover-image');
+  
+  image2.addEventListener('mouseover', function() {
+    this.src = "./img/heartslug2.png";
+  });
+  
+  image2.addEventListener('mouseout', function() {
+    this.src = "./img/heartslug1.png";
   });
 });

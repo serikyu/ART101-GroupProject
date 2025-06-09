@@ -1,9 +1,15 @@
 /*Silly Slug!*/
-.hover-image-container {
+.left-hover-image-container {
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+}
+.right-hover-image-container {
   position: absolute;
   right: 50px;
   bottom: 10px;
 }
+
 
 /*table of contents*/
 
@@ -50,16 +56,28 @@ a.map {
   float: right;
 }
 
-/*link effects*/
-a.home:hover {
-  color: #FFE985;
-}
-
-a.map:hover {
-  color: #FFE985;
-}
-
 .column img{
   width: 350px;
   height: auto;
+}
+
+/* about*/
+
+.home {
+    position: relative;
+    font-size: 20px;
+}
+
+.map {
+    position: relative;
+    font-size: 20px;
+}
+
+img {
+    margin: auto;
+    width: 120px;
+  }
+
+#right-img{
+    float: right
 }
