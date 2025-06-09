@@ -50,15 +50,6 @@ a.map {
   float: right;
 }
 
-/*link effects*/
-a.home:hover {
-  color: #FFE985;
-}
-
-a.map:hover {
-  color: #FFE985;
-}
-
 .column img{
   width: 350px;
   height: auto;
@@ -80,3 +71,7 @@ img {
     margin: auto;
     width: 120px;
   }
+
+.right-img{
+    float: right
+}
