@@ -51,10 +51,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const image2 = document.querySelector('.aboutslug-hover-image');
   
   image2.addEventListener('mouseover', function() {
-    this.src = "../img/heartslug2.png";
+    this.src = "../img/heartslug2.PNG";
   });
   
   image2.addEventListener('mouseout', function() {
-    this.src = "./img/heartslug1.png";
+    this.src = "./img/heartslug1.PNG";
   });
 });
