@@ -55,6 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   image2.addEventListener('mouseout', function() {
-    this.src = "./img/heartslug1.PNG";
+    this.src = "../img/heartslug1.PNG";
   });
 });
